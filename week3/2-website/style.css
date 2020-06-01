@@ -46,24 +46,24 @@ a {
 
 .contact-button {
   color: rgb(200, 144, 233);
-  font-size: 25px;
+  font-size: 2.5rem;
   border-color: rgb(252, 251, 253);
-  border-radius: 20px;
+  border-radius: 2rem;
   border-width: medium;
-  width: 125px;
-  height: 50px;
+  width: 12.5rem;
+  height: 5rem;
 }
 
 .navigation ul {
   display: flex;
   /* border: 1px solid; */
-  padding-left: 5px;
+  padding-left: 0.5rem;
 }
 
 .navigation li {
-  padding-top: 25px;
-  padding-right: 50px;
-  font-size: 25px;
+  padding-top: 2.5rem;
+  padding-right: 5rem;
+  font-size: 2.5rem;
 }
 
 /* About section styles */
@@ -72,16 +72,10 @@ a {
   padding-top: 5rem;
 }
 
-/* .main-left
-{
-  border: 2px solid;
-} */
-
 .about h1 {
   font-size: 3.5rem;
   color: rgb(255, 128, 153);
   text-align: center;
-  /* max-width: 80%; */
 }
 
 .about h3 {
@@ -101,11 +95,11 @@ a {
 /* Example cake styles */
 
 .example-cakes h3 {
-  font-size: 25px;
+  font-size: 2.5rem;
   color: rgb(255, 128, 153);
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 .example-cakes ul {
@@ -116,7 +110,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
 }
 
 .images {
@@ -127,29 +121,24 @@ a {
 
 .footer {
   display: flex;
-  /* flex-direction: row; */
   padding: 2rem;
   justify-content: center;
-  /* font-size: 1rem; */
 }
 
 .footer li {
   padding-right: 3rem;
   font-size: 3rem;
 }
-/* ---------------------------------------------------------------------------------------- */
 
+
+/* ---------------------------------------------------------------------------------------- */
 /* Media queries */
 
 
 @media only screen and (min-width: 650px) {
 
 
-  header span
-  {
-    visibility: hidden;
-  }
-
+  /* hiding the buttons for nav bar  */
   .closebtn
   {
     visibility: hidden;
@@ -165,7 +154,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 20px;
+    padding-left: 2rem;
   }
 
   .example-cakes ul {
@@ -191,24 +180,24 @@ a {
     display: flex;
     flex-direction: column;
     align-self: start;
-    height: 250px;
-    width: 250px;
+    height: 25rem;
+    width: 25rem;
   }
 
   .contact-button {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    width: 175px;
-    height: 75px;
-    font-size: 30px;
-    padding-left: 30px;
-    padding-top: 8px;
-    margin-right: 5px;
+    width: 17.5rem;
+    height: 7.5rem;
+    font-size: 3rem;
+    padding-left: 3rem;
+    padding-top: 0.8rem;
+    margin-right: 0.5rem;
   }
 
   .navigation li {
-    font-size: 30px;
+    font-size: 3rem;
   }
 
   .about
@@ -228,15 +217,15 @@ a {
     width:50%;
   }
   .about h1 {
-    font-size: 60px;
+    font-size: 6rem;
   }
 
   .about h3 {
-    font-size: 30px;
+    font-size: 3rem;
   }
 
   .example-cakes h3 {
-    font-size: 30px;
+    font-size: 3rem;
   }
 
   .example-cakes ul {
@@ -250,7 +239,7 @@ a {
   }
 
   .footer li {
-    font-size: 30px;
+    font-size: 3rem;
   }
 }
 
@@ -306,12 +295,12 @@ a {
   top: 25%; /* 25% from the top */
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  margin-top: 3rem; /* 30px top margin to avoid conflict with the close button on smaller screens */
  }
 
  /* The navigation links inside the overlay */
  .overlay a {
-  padding: 8px;
+  padding: 0.8rem;
   text-decoration: none;
   font-size: 2rem;
   color: #818181;
@@ -383,6 +372,10 @@ a {
     width:4rem;
   }
   
+  main .about
+  {
+    padding:0;
+  }
 
   .about h1 
   {
