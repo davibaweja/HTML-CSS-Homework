@@ -1,8 +1,13 @@
 /* Universal styles */
 
+
+html{
+  font-size: 10px;
+}
 * {
   font-family: "Pacifico", cursive;
   background-color: rgb(188, 243, 226);
+  /* border:1px solid; */
 }
 
 li {
@@ -18,15 +23,53 @@ a {
 
 .top-header {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  /* background-color: blueviolet; */
   align-items: center;
 }
 
 .top-header .header-image {
-  height: 200px;
-  width: 200px;
-  padding: 20px;
+  height: 20rem;
+  width: 20rem;
+  padding: 1em;
 }
+
+.top-header button{
+  align-self: flex-end;
+  margin:2em 0;
+}
+
+
+
+
+@media only screen and (max-width: 350px)
+{
+  .top-header{
+    flex-direction: column;
+    
+  }
+
+  .top-header button
+  {
+    align-self: center;
+  }
+  
+}
+
+
+
+@media only screen and (max-width: 450px)
+{
+  .top-header{
+    justify-content: space-between;
+  }
+
+ 
+  
+}
+
+
 
 .contact-button {
   color: rgb(200, 144, 233);
@@ -116,6 +159,15 @@ a {
 }
 
 /* Media queries */
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 650px) {
   .navigation ul {
