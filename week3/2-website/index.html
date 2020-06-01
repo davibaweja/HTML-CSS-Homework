@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+<script>
+  /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,8 +47,11 @@
         <button class="contact-button ">Contact</button>
       </div>
 
-      <nav class="navigation">
-        <ul>
+      <nav id="myNav" class="navigation overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <ul class="overlay-content">
           <li><a href="">Home</a></li>
           <li><a href="">Cakes</a></li>
           <li><a href="">Ordering</a></li>
@@ -40,6 +59,8 @@
           <li><a href="">About</a></li>
         </ul>
       </nav>
+
+      <span onclick="openNav()">open</span>
     </header>
 
     <main>
